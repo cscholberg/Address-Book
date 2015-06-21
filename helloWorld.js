@@ -20,8 +20,11 @@ app.controller('contactController', function($scope){
     $scope.name = user.name;
     $scope.email = user.email;
     $scope.phone = user.phone;
+    $scope.delete(user);
   }
 
-  
+  $scope.delete = function(user){
+    $scope.addressBook.splice($scope.addressBook.indexOf(user), 1);
+  }
 });
 
