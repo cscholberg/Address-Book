@@ -15,5 +15,13 @@ app.controller('contactController', function($scope){
     $scope.email = '';
     $scope.phone = '';
   }
+
+  $scope.edit = function(user){
+    $scope.name = user.name;
+    $scope.email = user.email;
+    $scope.phone = user.phone;
+  }
+
+  
 });
 
